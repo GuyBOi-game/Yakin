@@ -1,0 +1,2 @@
+# Yakin
+A sosial app
