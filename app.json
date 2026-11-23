@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Yakın",
+    "slug": "yakin",
+    "owner": "ardino18s-team",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "scheme": "yakinmesaj",
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "root": "src/app"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Yakın profil fotoğrafı seçmek için fotoğraflarına erişir.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.yakinmesaj.chat",
+      "adaptiveIcon": {
+        "backgroundColor": "#1E452A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "router": {
+        "root": "src/app",
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "53d8d0dd-2143-488e-89fd-065a44ba975a"
+      }
+    }
+  }
+}
